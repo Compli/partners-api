@@ -240,17 +240,17 @@ The following properties may be passed to the `create_personnel` endpoint.  Fiel
 
 `location` _string_ **MUST MATCH EXISTING**
 
-`employee_status` **396**
+`employee_status` _string_ **MUST MATCH EXISTING** (Recomend using "Active")
 
-`supervisor_first_name` _string_ *MUST MATCH EXISTING*
+`supervisor_first_name` _string_ **MUST MATCH EXISTING**
 
-`supervisor_last_name` _string_ *MUST MATCH EXISTING*
+`supervisor_last_name` _string_ **MUST MATCH EXISTING**
 
-`username` _string_
+`username` _string_ *REQUIRED*
 
-`type` **436**
+`type` _integer_ **MUST MATCH EXISTING** (Recomend using "Employee")
 
-`employment_classification` **1596**
+`employment_classification` _string_ **MUST MATCH EXISTING** (Choose from "Full Time", "Part Time", "Seasonal", "Temporary")
 
 `employee_number` _int_
 
@@ -397,5 +397,3 @@ Example Response:
 ```
 
 Copyright 2018 Compli All Rights Reserved
-
-**FOR INTERNAL USE ONLY**
