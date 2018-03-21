@@ -236,8 +236,6 @@ The following properties may be passed to the `create_personnel` endpoint.  Fiel
 
 `title` _string_ **REQUIRED**
 
-`department` _string_ **MUST MATCH EXISTING**
-
 `location` _string_ **MUST MATCH EXISTING**
 
 `employee_status` _string_ **MUST MATCH EXISTING** (Recomend using "Active")
