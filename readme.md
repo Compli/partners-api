@@ -95,22 +95,29 @@ Example Response:
       
     ],
     "data":[
-      {
-        "_job_title":"Text",
-        "_job_code":"Some Text"
-      },
-      {
-        "_job_title":"Text",
-        "_job_code":"Some Text"
-      },
-      {
-        "_job_title":"Text",
-        "_job_code":"Some Text"
-      },
-      {
-        "_job_title":"Text",
-        "_job_code":"Some Text"
-      }
+        {
+        "result": "searched",
+        "error_code": null,
+        "error_desc": null,
+        "data": [
+            {
+              "_job_title":"Text",
+              "_job_code":"Some Text"
+            },
+            {
+              "_job_title":"Text",
+              "_job_code":"Some Text"
+            },
+            {
+              "_job_title":"Text",
+              "_job_code":"Some Text"
+            },
+            {
+              "_job_title":"Text",
+              "_job_code":"Some Text"
+            }
+        ]
+        }
     ]
   }
 }
@@ -145,25 +152,30 @@ Example Response:
     "result":"success",
     "error_code":null,
     "error_desc":null,
-    "warnings":[
-      
-    ],
+    "warnings":[],
     "data":[
-      {
-        "_location_id":"Some Text",
-        "_location_type":2980,
-        "_location_name":"Text"
-      },
-      {
-        "_location_id":"Some Text",
-        "_location_type":2980,
-        "_location_name":"Text"
-      },
-      {
-        "_location_id":"Some Text",
-        "_location_type":2980,
-        "_location_name":"Text"
-      }
+    {
+        "result": "searched",
+        "error_code": null,
+        "error_desc": null,
+        "data":[
+          {
+            "_location_id":"Some Text",
+            "_location_type":2980,
+            "_location_name":"Text"
+          },
+          {
+            "_location_id":"Some Text",
+            "_location_type":2980,
+            "_location_name":"Text"
+          },
+          {
+            "_location_id":"Some Text",
+            "_location_type":2980,
+            "_location_name":"Text"
+          }
+        ]
+    }
     ]
   }
 }
@@ -181,7 +193,7 @@ Content-Type: application/json
 {
   "payload":{
     "client_unique_identifier":"4f8b15a65a9ac850c0809c4fffc13c64",
-    "function":"locations",
+    "function":"supervisors",
     "data":[
       
     ]
@@ -198,15 +210,21 @@ Example Response:
     "result":"success",
     "error_code":null,
     "error_desc":null,
-    "warnings":[
-      
-    ],
+    "warnings":[],
     "data":[
-      {
-        "first_name":"Text",
-        "last_name":"Text",
-        "employee_number":"1234"
-      }
+       {
+        "result": "searched",
+        "error_code": null,
+        "error_desc": null,
+        "data":[
+          {
+              {
+                "first_name":"Text",
+                "last_name":"Text",
+                "employee_number":"1234"
+              }
+        ]
+       }
     ]
   }
 }
@@ -394,4 +412,4 @@ Example Response:
 }
 ```
 
-Copyright 2018 Compli All Rights Reserved
+Copyright 2020 Compli All Rights Reserved
