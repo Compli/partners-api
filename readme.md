@@ -264,7 +264,7 @@ The following properties may be passed to the `create_personnel` endpoint.  Fiel
 
 `username` _string_ *REQUIRED*
 
-`type` _integer_ **MUST MATCH EXISTING** (Recomend using "Employee")
+`type` _string_ **MUST MATCH EXISTING** (Recomend using "Employee")
 
 `employment_classification` _string_ **MUST MATCH EXISTING** (Choose from "Full Time", "Part Time", "Seasonal", "Temporary")
 
@@ -326,12 +326,12 @@ Content-Type: application/json
         "title":"Text",
         "department":"Text",
         "location":"Text",
-        "employee_status":396,
+        "employee_status":"Text",
         "supervisor_first_name":"Text",
         "supervisor_last_name":"Text",
         "username":"Some Text",
-        "type":436,
-        "employment_classification":1596,
+        "type":"Text",
+        "employment_classification":"Text",
         "employee_number":"1234",
         "supervisor_employee_number":"1234",
         "hire_date":"12\/25\/2013",
@@ -359,12 +359,12 @@ Content-Type: application/json
         "title":"Text",
         "department":"Text",
         "location":"Text",
-        "employee_status":396,
+        "employee_status":"Text",
         "supervisor_first_name":"Text",
         "supervisor_last_name":"Text",
         "username":"Some Text",
-        "type":436,
-        "employment_classification":1596,
+        "type":"Text",
+        "employment_classification":"Text",
         "employee_number":"1234",
         "supervisor_employee_number":"1234",
         "hire_date":"12\/25\/2013",
